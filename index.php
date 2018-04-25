@@ -79,35 +79,35 @@
 <br>
 <br>
 
-
+  <!--CONTACT-->
   <div class="container-fluid">
-    <h3 class="text-center">TEST</h3>
     <div class="row">
-      <div class="col-sm-3">PRAZNO</div>
-      <div class="col-sm-6">FORMA</div>
-      <div class="col-sm-3">PRAZNO</div>
-    </div>
-  </div>
 
+      <div class="col-sm-3"></div>
 
-  <!--CONTACT (not working yet)-->
-  <div class="container-fluid bg-grey">
-    <h3 id="contact" class="text-center">CONTACT</h3>
-    <div class="row">
-      <div class="col-sm-6 form-group">
-        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+      <div class="col-sm-6">
+
+        <h3 id="contact" class="text-center">CONTACT</h3>
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+
+        <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea><br>
+
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6 form-group">
-        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-      </div>
-    </div>
 
-    <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea><br>
+      <div class="col-sm-3"></div>
 
-    <div class="row">
-      <div class="col-sm-12 form-group">
-        <button class="btn btn-default pull-right" type="submit">Send</button>
-      </div>
     </div>
   </div>
 
