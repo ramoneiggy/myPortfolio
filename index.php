@@ -116,7 +116,7 @@
     <p>
       &copy; 
       <?php
-      $fromYear = 2014; 
+      $fromYear = 2017; 
       $thisYear = (int)date('Y'); 
       echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> <a href="#">Igor Šolaja</a>.
     </p>
