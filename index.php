@@ -65,7 +65,7 @@
 
   <!--row 1-->
   <div class="container-fluid text-center">    
-    <h3 id="projects">PROJECTS</h3><br>
+    <h3 id="projects">PROJECTS<hr></h3><br>
     <div class="row">
 
       <div class="col-sm-3">
@@ -115,14 +115,16 @@
   <br>
 
   <!--CONTACT-->
+
   <div class="container-fluid">
+  <h3 id="contact" class="text-center">CONTACT<hr></h3>
     <div class="row">
 
       <div class="col-sm-3"></div>
 
       <div class="col-sm-6">
 
-        <h3 id="contact" class="text-center">CONTACT</h3>
+        
         <div class="row">
           <div class="col-sm-6 form-group">
             <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
