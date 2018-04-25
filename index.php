@@ -67,17 +67,52 @@
   <div class="container-fluid bg-3 text-center">    
     <h3 id="projects">PROJECTS</h3><br>
     <div class="row">
+
+      <div class="col-sm-3" style="border:1px solid black;">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/teta.png" alt="teta_tortusa_site">
+          <div class="card-body">
+            <p class="card-text">Teta Tortuša<br>Najbolje torte za sve Vaše prilike</p>
+            <a href="https://www.tetatortusa.com/" class="btn btn-primary">Visit site</a>
+          </div>
+        </div>
+      </div>
+      
       <div class="col-sm-3">
-        <a href="https://www.tetatortusa.com/" type="button" class="btn btn-light">
-        <p>Teta Tortuša</p>
-        <img src="images\teta.png" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
-        </a>
-      </div>   
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/teta.png" alt="teta_tortusa_site">
+          <div class="card-body">
+            <p class="card-text">Teta Tortuša<br>Najbolje torte za sve Vaše prilike</p>
+            <a href="https://www.tetatortusa.com/" class="btn btn-primary">Visit site</a>
+          </div>
+        </div>
+      </div> 
+
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/teta.png" alt="teta_tortusa_site">
+          <div class="card-body">
+            <p class="card-text">Teta Tortuša<br>Najbolje torte za sve Vaše prilike</p>
+            <a href="https://www.tetatortusa.com/" class="btn btn-primary">Visit site</a>
+          </div>
+        </div>
+      </div> 
+
+      <div class="col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/teta.png" alt="teta_tortusa_site">
+          <div class="card-body">
+            <p class="card-text">Teta Tortuša<br>Najbolje torte za sve Vaše prilike</p>
+            <a href="https://www.tetatortusa.com/" class="btn btn-primary">Visit site</a>
+          </div>
+        </div>
+      </div> 
+
     </div>
   </div>
 
-<br>
-<br>
+  <br>
+  <br>
 
   <!--CONTACT-->
   <div class="container-fluid">
