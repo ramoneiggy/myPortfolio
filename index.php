@@ -55,7 +55,7 @@
           <img class="turtle rounded-circle" src="images/header_small.jpg" alt="pic with turtle">
         </div>
         <!--HEADER TEXT-->
-        <h1 id="about_me">Hi, I'm <strong><a target="_blank" href="https://www.youtube.com/watch?v=nM__lPTWThU" class="judas">Igor<a></strong><br>I'm a <u>web developer</u></h1>
+        <h1 id="about_me">Hi, I'm <strong><a target="_blank" href="https://www.youtube.com/watch?v=nM__lPTWThU" class="judas">Igor</a></strong><br>I'm a <u>web developer</u></h1>
         <p>Some stuff that I use are PHP | MYSQL | HTML | CSS | JAVASCRIPT | BOOTSTRAP | WORDPRESS | PHOTOSHOP</p>
       </div>
     </div>
