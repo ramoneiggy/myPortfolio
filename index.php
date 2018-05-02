@@ -56,7 +56,7 @@
         </div>
         <!--HEADER TEXT-->
         <h1 id="about_me">Hi, I'm <strong><a target="_blank" href="https://www.youtube.com/watch?v=nM__lPTWThU" class="judas">Igor</a></strong><br>I'm a <u>web developer</u></h1>
-        <p>Some stuff that I use are PHP | MYSQL | HTML | CSS | JAVASCRIPT | BOOTSTRAP | WORDPRESS | PHOTOSHOP</p>
+        <p>Here is some stuff that I use - PHP | MYSQL | HTML | CSS | JAVASCRIPT | BOOTSTRAP | WORDPRESS | PHOTOSHOP</p>
       </div>
     </div>
   </header>
@@ -68,6 +68,7 @@
     <h3 id="projects">PROJECTS<hr></h3><br>
     <div class="row">
 
+      <!--example site start-->
       <div class="col-sm-3">
         <div class="card mx-auto" style="width: 18rem;">
           <img class="card-img-top" src="images/teta.png" alt="teta_tortusa_site">
@@ -77,36 +78,7 @@
           </div>
         </div>
       </div> 
-
-      <div class="col-sm-3">
-        <div class="card mx-auto" style="width: 18rem;">
-          <img class="card-img-top" src="images/teta.png" alt="teta_tortusa_site">
-          <div class="card-body">
-            <p class="card-text">Teta Tortuša<br>Najbolje torte za sve Vaše prilike</p>
-            <a href="https://www.tetatortusa.com/" class="btn btn-primary">Visit site</a>
-          </div>
-        </div>
-      </div> 
-
-      <div class="col-sm-3">
-        <div class="card mx-auto" style="width: 18rem;">
-          <img class="card-img-top" src="images/teta.png" alt="teta_tortusa_site">
-          <div class="card-body">
-            <p class="card-text">Teta Tortuša<br>Najbolje torte za sve Vaše prilike</p>
-            <a href="https://www.tetatortusa.com/" class="btn btn-primary">Visit site</a>
-          </div>
-        </div>
-      </div> 
-
-      <div class="col-sm-3">
-        <div class="card mx-auto" style="width: 18rem;">
-          <img class="card-img-top" src="images/teta.png" alt="teta_tortusa_site">
-          <div class="card-body">
-            <p class="card-text">Teta Tortuša<br>Najbolje torte za sve Vaše prilike</p>
-            <a href="https://www.tetatortusa.com/" class="btn btn-primary">Visit site</a>
-          </div>
-        </div>
-      </div> 
+      <!--example site end-->
 
     </div>
   </div>
@@ -120,30 +92,36 @@
   <h3 id="contact" class="text-center">CONTACT<hr></h3>
     <div class="row">
 
-      <div class="col-sm-3"></div>
+      <div class="col-sm-4"></div>
 
-      <div class="col-sm-6">
-
-        
+      <div class="col-sm-4">        
         <div class="row">
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-          </div>
-          <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-          </div>
-        </div>
 
-        <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea><br>
-
-        <div class="row">
           <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Send</button>
+            <form lass="form-control" action="contactForm.php" method="POST">
+              <input type="text" class="form-control" name="name" placeholder="Full name" required>
+              <br>
+              <input type="email" class="form-control" name="mail" placeholder="Your e-mail" required>
+              <br>
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+              <br>
+              <textarea name="message" class="form-control" placeholder="Message" rows="5" required></textarea>
+              <small class="form-text text-muted">*All fields are required. I'll never share your email or your data with anyone else.</small>
+              <br>
+              <button type="submit" class="btn btn-default pull-right" name="submit">SEND E-MAIL</button>
+            </form>
           </div>
-        </div>
+        <?php
+          if (array_key_exists("mail", $_GET) && $_GET["mail"] == "Sent") {
+              echo "<p class='col-sm-12 form-group text-right'>Your e-mail has been sent, I'll answer you shortly.</p>";
+          } else if (array_key_exists("mail", $_GET) && $_GET["mail"] == "error") {
+              echo "<p class='col-sm-12 form-group text-right'>Something went wrong, please try again.</p>";           
+          }
+        ?>        
+        </div>        
       </div>
 
-      <div class="col-sm-3"></div>
+      <div class="col-sm-4"></div>
 
     </div>
   </div>
@@ -157,6 +135,7 @@
       $thisYear = (int)date('Y'); 
       echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> <a href="#">Igor Šolaja</a>.
     </p>
+    <a name="toMe"></a>
   </footer>
 
 </body>
