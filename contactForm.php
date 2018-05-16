@@ -1,10 +1,22 @@
 <?php
 
 if (isset($_POST['submit'])) {
-        $name = $_POST['name'];
-        $subject = $_POST['subject'];
-        $mailFrom = $_POST['mail'];
-        $message = $_POST['message'];
+
+        function test_input($data) {
+                $data = trim($data);
+                $data = stripslashes($data);
+                $data = htmlspecialchars($data);
+                return $data;
+                }
+
+        $name = test_input($_POST['name']);
+        $subject = test_input($_POST['subject']);
+        $mailFrom = test_input($_POST['mail']);
+        if (!filter_var($mailFrom, FILTER_VALIDATE_EMAIL)) {
+                die;
+                header("Location: index.php?mail=invalidFormat");
+              }
+        $message = test_input($_POST['message']);
 
         $mailTo = "contact@isolaja.com";
         $headers = "From: ".$mailFrom;
@@ -13,4 +25,3 @@ if (isset($_POST['submit'])) {
                     mail($mailTo, $subject, $txt, $headers);
                     header("Location: index.php?mail=Sent#toMe");
 }
-

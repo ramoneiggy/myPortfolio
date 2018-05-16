@@ -57,7 +57,7 @@
         </div>
         <!--HEADER TEXT-->
         <h1 id="about_me">Hi, I'm <strong><a target="_blank" href="https://www.youtube.com/watch?v=nM__lPTWThU" class="judas">Igor</a></strong><br>I'm a <u>web developer</u></h1>
-        <p>Here is some stuff that I use - PHP | MYSQL | HTML | CSS | JAVASCRIPT | BOOTSTRAP | WORDPRESS | PHOTOSHOP</p>
+        <p>Here's some stuff that I use - PHP | MYSQL | HTML | CSS | JAVASCRIPT | BOOTSTRAP | WORDPRESS | PHOTOSHOP</p>
       </div>
     </div>
   </header>
@@ -72,10 +72,22 @@
       <!--example site start-->
       <div class="col-sm-3">
         <div class="card mx-auto" style="width: 18rem;">
-          <img class="card-img-top" src="images/teta.png" alt="teta_tortusa_site">
+          <img class="card-img-top" src="images/teta-tortusa.png" alt="teta-tortusa-img">
           <div class="card-body">
-            <p class="card-text">Teta Tortuša<br>Najbolje torte za sve Vaše prilike</p>
-            <a href="https://www.tetatortusa.com/" class="btn btn-primary">Visit site</a>
+            <p class="card-text">TETA TORTUŠA<br>Pastry chef's cake portfolio<br><small class="form-text">WORDPRESS, HTML, CSS</small></p>
+            <a href="https://www.tetatortusa.com/" class="btn btn-dark">Visit site</a>
+          </div>
+        </div>
+      </div> 
+      <!--example site end-->
+      <br><br>
+   <!--example site start-->
+      <div class="col-sm-3">
+        <div class="card mx-auto" style="width: 18rem;">
+          <img class="card-img-top" src="images/eros-council.png" alt="eros-council-img">
+          <div class="card-body">
+            <p class="card-text">EROS COUNCIL<br>Adult content review site<br><small class="text-red form-text">UNDER CONSTRUCTION - PHP</small></p>
+            <a href="https://github.com/Vangoda/PornReview" class="btn btn-dark">Visit github</a>
           </div>
         </div>
       </div> 
@@ -109,14 +121,18 @@
               <textarea name="message" class="form-control" placeholder="Message" rows="5" required></textarea>
               <small class="form-text text-muted">*All fields are required. I'll never share your email or your data with anyone else.</small>
               <br>
-              <button type="submit" class="btn btn-default pull-right" name="submit">SEND E-MAIL</button>
+              <button type="submit" class="btn btn-dark pull-right" name="submit">SEND E-MAIL</button>
             </form>
           </div>
         <?php
           if (array_key_exists("mail", $_GET) && $_GET["mail"] == "Sent") {
               echo "<p class='col-sm-12 form-group text-right'>Your e-mail has been sent, I'll answer you shortly.</p>";
-          } else if (array_key_exists("mail", $_GET) && $_GET["mail"] == "error") {
-              echo "<p class='col-sm-12 form-group text-right'>Something went wrong, please try again.</p>";           
+          }
+          if (array_key_exists("mail", $_GET) && $_GET["mail"] == "error") {
+              echo "<p class='col-sm-12 form-group text-right text-red'>Something went wrong, please try again.</p>";           
+          }
+          if (array_key_exists("mail", $_GET) && $_GET["mail"] == "invalidFormat") {
+            echo "<p class='col-sm-12 form-group text-right text-red'>Invalid email format.</p>";
           }
         ?>        
         </div>        
@@ -129,13 +145,11 @@
 
   <!--FOOTER-->
   <footer class="container-fluid text-center">
-    <p>
       &copy; 
       <?php
       $fromYear = 2017; 
       $thisYear = (int)date('Y'); 
-      echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> <a href="#">Igor Šolaja</a>.
-    </p>
+      echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> Igor Šolaja @ <a class="smoothScroll" href="#home">isolaja.com</a>
     <a name="toMe"></a>
   </footer>
 

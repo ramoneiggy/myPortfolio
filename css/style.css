@@ -1,3 +1,6 @@
+body{
+    background-color: whitesmoke;
+}
 .navbar-light .navbar-nav .nav-link:focus{
     font-weight: bold;
 }
@@ -8,11 +11,6 @@
     background-color: black;
     background-size: cover;
     color: white;
-
-}
-footer a:link, a:hover, a:visited, a:active{
-    color:#333;
-    text-decoration: none;
 }
 .judas:visited, .judas:link, .judas:hover, .judas:active {
     color: inherit;
@@ -21,28 +19,42 @@ footer a:link, a:hover, a:visited, a:active{
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
-    }
+}
 footer {
-    background-color: grey;
-    padding: 15px;
-    }
-
+    background-color: black;
+    color: white;
+}
 .turtle{
-        float: left;
-        margin-top: -40px;
-    }
+    float: left;
+    margin-top: -40px;
+}
 .rotate_image img:hover{
+    -webkit-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
 }
 .rotate_image img{
+    -webkit-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
 }
-
-
+footer>a {
+    color: white;
+    text-decoration: none;
+}
+footer>a:hover {
+    color: white;
+    text-decoration: none;
+}
+.text-red{
+    color: darkred;
+}
 @media screen and (max-width: 600px){
     .turtle{
         float: none;
         margin-top: 0;
-    }
+   }
 }
