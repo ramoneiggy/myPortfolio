@@ -1,12 +1,6 @@
 body{
     background-color: whitesmoke;
 }
-.navbar-light .navbar-nav .nav-link:focus{
-    font-weight: bold;
-}
-.navbar-light .navbar-brand:focus{
-    font-weight: bold;
-}
 .jumbotron{
     background-color: black;
     background-size: cover;

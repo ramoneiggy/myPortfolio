@@ -13,14 +13,14 @@
   <meta name="description" content="Home and portfolio site of Igor Šolaja, PHP web developer. You can contact me here." /> 
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <script type="text/javascript" src="javascript/smoothscroll.js"></script>
 </head>
 <body>
 
   <!--NAVIGATION-->
-  <a id="home"></a>
-  <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
-    <a class="navbar-brand smoothScroll" href="#home">$<u>HOME</u> = </a>
+  <div id="top"></div>
+  <div id="about_me"></div>
+  <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top" id="mainNav">
+    <a class="navbar-brand js-scroll-trigger" href="#top">$<u>HOME</u> = </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,13 +28,13 @@
       <!--NAV-->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link smoothScroll" href="#about_me">"ABOUT_ME";</a>
+          <a class="nav-link js-scroll-trigger" href="#about_me">"ABOUT_ME";</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link smoothScroll" href="#projects">"PROJECTS";</a>
+          <a class="nav-link js-scroll-trigger" href="#projects">"PROJECTS";</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link smoothScroll" href="#contact">"CONTACT";</a>
+          <a class="nav-link js-scroll-trigger" href="#contact">"CONTACT";</a>
         </li>
       </ul>
 
@@ -56,17 +56,18 @@
           <img class="turtle rounded-circle" src="images/header_small.jpg" alt="pic with turtle">
         </div>
         <!--HEADER TEXT-->
-        <h1 id="about_me">Hi, I'm <strong><a target="_blank" href="https://www.youtube.com/watch?v=nM__lPTWThU" class="judas">Igor</a></strong><br>I'm a <u>web developer</u></h1>
+        <h1>Hi, I'm <strong><a target="_blank" href="https://www.youtube.com/watch?v=nM__lPTWThU" class="judas">Igor</a></strong><br>I'm a <u>web developer</u></h1>
         <p>Here's some stuff that I use - PHP | MYSQL | HTML | CSS | JAVASCRIPT | BOOTSTRAP | WORDPRESS | PHOTOSHOP</p>
       </div>
     </div>
   </header>
-  
+
   <!--PROJECTS-->
+  <div id="projects"></div>
 
   <!--row 1-->
   <div class="container-fluid text-center">    
-    <h3 id="projects">PROJECTS<hr></h3><br>
+    <h3>PROJECTS<hr></h3><br>
     <div class="row">
 
       <!--example site start-->
@@ -100,9 +101,10 @@
   <br>
 
   <!--CONTACT-->
+  <div id="contact"></div>
 
   <div class="container-fluid">
-  <h3 id="contact" class="text-center">CONTACT<hr></h3>
+  <h3 class="text-center">CONTACT<hr></h3>
     <div class="row">
 
       <div class="col-sm-4"></div>
@@ -149,9 +151,12 @@
       <?php
       $fromYear = 2017; 
       $thisYear = (int)date('Y'); 
-      echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> Igor Šolaja @ <a class="smoothScroll" href="#home">isolaja.com</a>
+      echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> Igor Šolaja @ <a class="smoothScroll" href="#top">isolaja.com</a>
     <a name="toMe"></a>
   </footer>
 
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/scrolling-nav.js"></script>
+  
 </body>
 </html>
