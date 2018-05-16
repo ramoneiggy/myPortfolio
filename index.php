@@ -69,7 +69,7 @@
   <div class="container-fluid text-center">    
     <h3>PROJECTS<hr></h3><br>
     <div class="row">
-
+    <div class="col-sm-3"></div>
       <!--example site start-->
       <div class="col-sm-3">
         <div class="card mx-auto" style="width: 18rem;">
@@ -93,7 +93,7 @@
         </div>
       </div> 
       <!--example site end-->
-
+    <div class="col-sm-3"></div>
     </div>
   </div>
 
