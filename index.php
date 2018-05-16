@@ -121,20 +121,20 @@
               <input type="text" class="form-control" name="subject" placeholder="Subject" required>
               <br>
               <textarea name="message" class="form-control" placeholder="Message" rows="5" required></textarea>
-              <small class="form-text text-muted">*All fields are required. I'll never share your email or your data with anyone else.</small>
+              <small class="form-text text-muted">*All fields are required. I'll never share your email or your data with anyone else</small>
               <br>
               <button type="submit" class="btn btn-dark pull-right" name="submit">SEND E-MAIL</button>
             </form>
           </div>
         <?php
           if (array_key_exists("mail", $_GET) && $_GET["mail"] == "Sent") {
-              echo "<p class='col-sm-12 form-group text-right'>Your e-mail has been sent, I'll answer you shortly.</p>";
+              echo "<p class='col-sm-12 form-group text-right'>Your e-mail has been sent, I'll answer you shortly</p>";
           }
           if (array_key_exists("mail", $_GET) && $_GET["mail"] == "error") {
-              echo "<p class='col-sm-12 form-group text-right text-red'>Something went wrong, please try again.</p>";           
+              echo "<p class='col-sm-12 form-group text-right text-red'>Something went wrong, please try again</p>";           
           }
           if (array_key_exists("mail", $_GET) && $_GET["mail"] == "invalidFormat") {
-            echo "<p class='col-sm-12 form-group text-right text-red'>Invalid email format.</p>";
+            echo "<p class='col-sm-12 form-group text-right text-red'>Invalid email format</p>";
           }
         ?>        
         </div>        
@@ -151,7 +151,7 @@
       <?php
       $fromYear = 2017; 
       $thisYear = (int)date('Y'); 
-      echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> Igor Šolaja @ <a class="smoothScroll" href="#top">isolaja.com</a>
+      echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> Igor Šolaja @ <a class="js-scroll-trigger" href="#top">isolaja.com</a>
     <a name="toMe"></a>
   </footer>
 
