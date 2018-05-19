@@ -19,7 +19,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Home and portfolio site of Igor Šolaja, PHP web developer. You can contact me here." /> 
+  <meta name="description" content="Home and portfolio site of Igor Šolaja, PHP web developer. You can contact me here." />
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
@@ -53,7 +53,7 @@
         <li class="nav-item"><a target="_blank" class="nav-link" href="https://github.com/ramoneiggy"><i class="fa fa-github" style="font-size:24px"></i></a></li>
       </ul>
     </div>
-  </nav> 
+  </nav>
 
   <!--HEADER-->
   <header>
@@ -75,7 +75,7 @@
   <div id="projects"></div>
 
   <!--row 1-->
-  <div class="container-fluid text-center">    
+  <div class="container-fluid text-center">
     <h3>PROJECTS<hr></h3><br>
     <div class="row">
     <div class="col-lg-3"></div>
@@ -85,10 +85,10 @@
           <img class="card-img-top" src="images/teta-tortusa.png" alt="teta-tortusa-img">
           <div class="card-body">
             <p class="card-text">TETA TORTUŠA<br>Pastry chef's cake portfolio<br><small class="form-text">WORDPRESS, HTML, CSS</small></p>
-            <a href="https://www.tetatortusa.com/" class="btn btn-dark">Visit site</a>
+            <a href="https://www.tetatortusa.com/" class="btn btn-dark" target="_blank">Visit site</a>
           </div>
         </div>
-      </div> 
+      </div>
       <!--example site end-->
       <br><br>
    <!--example site start-->
@@ -96,11 +96,11 @@
         <div class="card mx-auto" style="width: 18rem;">
           <img class="card-img-top" src="images/eros-council.png" alt="eros-council-img">
           <div class="card-body">
-            <p class="card-text">EROS COUNCIL<br>Adult content review site<br><small class="text-red form-text">UNDER CONSTRUCTION - PHP</small></p>
-            <a href="https://github.com/Vangoda/PornReview" class="btn btn-dark">Visit github</a>
+            <p class="card-text">EROS COUNCIL<br>Adult content review site<br><small class="text-red form-text">IN DEVELOPMENT - PHP</small></p>
+            <a href="https://github.com/Vangoda/PornReview" class="btn btn-dark" target="_blank">Visit github</a>
           </div>
         </div>
-      </div> 
+      </div>
       <!--example site end-->
     <div class="col-lg-3"></div>
     </div>
@@ -118,7 +118,7 @@
 
       <div class="col-lg-3"></div>
 
-      <div class="col-lg-6">        
+      <div class="col-lg-6">
         <div class="row">
 
           <div class="col-sm-12 form-group">
@@ -140,13 +140,13 @@
               echo "<p class='col-sm-12 form-group text-right'>Your e-mail has been sent, I'll answer you as soon as possible</p>";
           }
           if (array_key_exists("mail", $_GET) && $_GET["mail"] == "error") {
-              echo "<p class='col-sm-12 form-group text-right text-red'>Something went wrong, please try again</p>";           
+              echo "<p class='col-sm-12 form-group text-right text-red'>Something went wrong, please try again</p>";
           }
           if (array_key_exists("mail", $_GET) && $_GET["mail"] == "invalidFormat") {
             echo "<p class='col-sm-12 form-group text-right text-red'>Invalid email format</p>";
           }
-        ?>        
-        </div>        
+        ?>
+        </div>
       </div>
 
       <div class="col-lg-3"></div>
@@ -156,16 +156,16 @@
 
   <!--FOOTER-->
   <footer class="container-fluid text-center">
-      &copy; 
+      &copy;
       <?php
-      $fromYear = 2017; 
-      $thisYear = (int)date('Y'); 
+      $fromYear = 2017;
+      $thisYear = (int)date('Y');
       echo $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');?> Igor Šolaja @ <a class="js-scroll-trigger" href="#top">isolaja.com</a>
     <a name="toMe"></a>
   </footer>
 
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/scrolling-nav.js"></script>
-  
+
 </body>
 </html>
