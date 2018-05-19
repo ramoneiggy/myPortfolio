@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119416797-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119416797-1');
+  </script>
   <title>Igor Solaja | Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +27,6 @@
 
   <!--NAVIGATION-->
   <div id="top"></div>
-  <div id="about_me"></div>
   <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top" id="mainNav">
     <a class="navbar-brand js-scroll-trigger" href="#top">$<u>HOME</u> = </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -56,7 +64,8 @@
           <img class="turtle rounded-circle" src="images/header_small.jpg" alt="pic with turtle">
         </div>
         <!--HEADER TEXT-->
-        <h1>Hi, I'm <strong><a target="_blank" href="https://www.youtube.com/watch?v=nM__lPTWThU" class="judas">Igor</a></strong><br>I'm a <u>web developer</u></h1>
+         <div id="about_me"></div>
+        <h1>Hi, I'm <strong><u>Igor</u></strong><br>I'm a <u>web developer</u></h1>
         <p>Here's some stuff that I use - PHP | MYSQL | HTML | CSS | JAVASCRIPT | BOOTSTRAP | WORDPRESS | PHOTOSHOP</p>
       </div>
     </div>
@@ -69,9 +78,9 @@
   <div class="container-fluid text-center">    
     <h3>PROJECTS<hr></h3><br>
     <div class="row">
-    <div class="col-sm-3"></div>
+    <div class="col-lg-3"></div>
       <!--example site start-->
-      <div class="col-sm-3">
+      <div class="col-lg-3">
         <div class="card mx-auto" style="width: 18rem;">
           <img class="card-img-top" src="images/teta-tortusa.png" alt="teta-tortusa-img">
           <div class="card-body">
@@ -83,7 +92,7 @@
       <!--example site end-->
       <br><br>
    <!--example site start-->
-      <div class="col-sm-3">
+      <div class="col-lg-3">
         <div class="card mx-auto" style="width: 18rem;">
           <img class="card-img-top" src="images/eros-council.png" alt="eros-council-img">
           <div class="card-body">
@@ -93,7 +102,7 @@
         </div>
       </div> 
       <!--example site end-->
-    <div class="col-sm-3"></div>
+    <div class="col-lg-3"></div>
     </div>
   </div>
 
@@ -107,9 +116,9 @@
   <h3 class="text-center">CONTACT<hr></h3>
     <div class="row">
 
-      <div class="col-sm-4"></div>
+      <div class="col-lg-3"></div>
 
-      <div class="col-sm-4">        
+      <div class="col-lg-6">        
         <div class="row">
 
           <div class="col-sm-12 form-group">
@@ -121,14 +130,14 @@
               <input type="text" class="form-control" name="subject" placeholder="Subject" required>
               <br>
               <textarea name="message" class="form-control" placeholder="Message" rows="5" required></textarea>
-              <small class="form-text text-muted">*All fields are required. I'll never share your email or your data with anyone else</small>
+              <small class="form-text text-muted text-right">All fields are required and I'll never share your email or your data with anyone else</small>
               <br>
               <button type="submit" class="btn btn-dark pull-right" name="submit">SEND E-MAIL</button>
             </form>
           </div>
         <?php
           if (array_key_exists("mail", $_GET) && $_GET["mail"] == "Sent") {
-              echo "<p class='col-sm-12 form-group text-right'>Your e-mail has been sent, I'll answer you shortly</p>";
+              echo "<p class='col-sm-12 form-group text-right'>Your e-mail has been sent, I'll answer you as soon as possible</p>";
           }
           if (array_key_exists("mail", $_GET) && $_GET["mail"] == "error") {
               echo "<p class='col-sm-12 form-group text-right text-red'>Something went wrong, please try again</p>";           
@@ -140,7 +149,7 @@
         </div>        
       </div>
 
-      <div class="col-sm-4"></div>
+      <div class="col-lg-3"></div>
 
     </div>
   </div>

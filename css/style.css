@@ -46,6 +46,9 @@ footer>a:hover {
 .text-red{
     color: darkred;
 }
+.card-img-top {
+	max-height: 180px;
+} 
 @media screen and (max-width: 600px){
     .turtle{
         float: none;
