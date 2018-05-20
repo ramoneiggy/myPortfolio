@@ -97,7 +97,7 @@
           <img class="card-img-top" src="images/eros-council.png" alt="eros-council-img">
           <div class="card-body">
             <p class="card-text">EROS COUNCIL<br>Adult content review site<br><small class="text-red form-text">IN DEVELOPMENT - PHP</small></p>
-            <a href="https://github.com/Vangoda/PornReview" class="btn btn-dark" target="_blank">Visit github</a>
+            <a href="https://github.com/ramoneiggy/ErosCouncil" class="btn btn-dark" target="_blank">Visit github</a>
           </div>
         </div>
       </div>
