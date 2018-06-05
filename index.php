@@ -78,13 +78,12 @@
   <div class="container-fluid text-center">
     <h3>PROJECTS<hr></h3><br>
     <div class="row">
-    <div class="col-lg-3"></div>
       <!--example site start-->
       <div class="col-lg-3">
         <div class="card mx-auto" style="width: 18rem;">
           <img class="card-img-top" src="images/teta-tortusa.png" alt="teta-tortusa-img">
           <div class="card-body">
-            <p class="card-text">TETA TORTUŠA<br>Pastry chef's cake portfolio<br><small class="form-text">WORDPRESS, HTML, CSS</small></p>
+            <p class="card-text">TETA TORTUŠA<br>Pastry chef's cake portfolio<br><small class="form-text">WORDPRESS</small></p>
             <a href="https://www.tetatortusa.com/" class="btn btn-dark" target="_blank">Visit site</a>
           </div>
         </div>
@@ -97,12 +96,35 @@
           <img class="card-img-top" src="images/eros-council.png" alt="eros-council-img">
           <div class="card-body">
             <p class="card-text">EROS COUNCIL<br>Adult content review site<br><small class="text-red form-text">IN DEVELOPMENT - PHP</small></p>
-            <a href="https://github.com/ramoneiggy/ErosCouncil" class="btn btn-dark" target="_blank">Visit github</a>
+            <a href="http://eroscouncil.isolaja.com" class="btn btn-dark" target="_blank">Visit site</a>
           </div>
         </div>
       </div>
       <!--example site end-->
-    <div class="col-lg-3"></div>
+      <br><br>
+   <!--example site start-->
+   <div class="col-lg-3">
+        <div class="card mx-auto" style="width: 18rem;">
+          <img class="card-img-top" src="images/svadba-app.png" alt="svadba-app-img">
+          <div class="card-body">
+            <p class="card-text">SVADBA APP<br>Wedding organizer app<br><small class="form-text">PHP</small></p>
+            <a href="http://svadbaapp.isolaja.com/" class="btn btn-dark" target="_blank">Visit site</a>
+          </div>
+        </div>
+      </div>
+      <!--example site end-->
+      <br><br>
+   <!--example site start-->
+      <div class="col-lg-3">
+        <div class="card mx-auto" style="width: 18rem;">
+          <img class="card-img-top" src="images/perfect-wellness.png" alt="perfect-wellness-img">
+          <div class="card-body">
+            <p class="card-text">PERFECT WELLNESS<br>Exclusive wellness site<br><small class="form-text">WORDPRESS</small></p>
+            <a href="http://wellness.isolaja.com/" class="btn btn-dark" target="_blank">Visit site</a>
+          </div>
+        </div>
+      </div>
+      <!--example site end-->
     </div>
   </div>
 
